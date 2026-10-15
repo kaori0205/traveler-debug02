@@ -4,7 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  belongs_to :post
+  #belongs_to :post #削除
+  has_many :posts, dependent: :destroy #追加
   has_many :comments, dependent: :destroy
   has_many :favorites, dependent: :destroy 
   has_many :follower, class_name: "Relationship", foreign_key: "follower_id", dependent: :destroy

@@ -17,7 +17,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @user.update(user_params)
-    redirect_to users_path(@user)
+    #redirect_to users_path(@user)　#削除
+    redirect_to user_path(@user) #追加
   end
 
   def follows
