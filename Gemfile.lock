@@ -89,6 +89,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.26.0)
       msgpack (~> 1.5)
+    bootstrap (5.3.8)
+      popper_js (>= 2.11.8, < 3)
     builder (3.3.0)
     capybara (3.40.0)
       addressable
@@ -188,6 +190,7 @@ GEM
     nokogiri (1.19.4-x64-mingw-ucrt)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    popper_js (2.11.8)
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.1)
@@ -317,6 +320,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap (~> 5.3.3)
   capybara
   debug
   devise

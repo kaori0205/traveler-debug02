@@ -23,5 +23,8 @@
         <div><%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "text-white nav-link" %></div>
       </header>
     <% end %>
+
+    <%# それぞれのページ（新規投稿、一覧など）のビューを適用するため以下を追記 %>
+    <%= yield %>
   </body>
 </html>
